@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+
+		<section id="scene">
+		  <div class="layer background" data-depth="0.2">
+		  	<div class="bg-image"></div>
+		  </div>
+
+		  <div class="layer middle" data-depth="0.5">
+		  	<h1>Parallax is the coolest</h1>
+		  </div>
+
+		  <div class="layer foreground" data-depth="0.8">
+		  	<h1>Parallax is the coolest</h1>
+		  	<div class="fg-panel"></div>
+		  </div>
+		</section>
+
+		<section class="posts">
+
+			<div class="post-links">
+				<img src="http://lorempixel.com/output/animals-q-c-200-200-8.jpg" alt="dog">
+				<h2> This is the link to an article.</h2>
+			</div>
+
+			<div class="post-links">
+				<img src="http://lorempixel.com/output/animals-q-c-200-200-7.jpg" alt="cat">
+				<h2> Another Link.</h2>
+			</div>
+
+			<div class="post-links">
+				<img src="http://lorempixel.com/output/animals-q-c-200-200-3.jpg" alt="tiger">
+				<h2> The Third Link.</h2>
+			</div>
+
+			<div class="post-links last">
+				<img src="http://lorempixel.com/output/animals-q-c-200-200-5.jpg" alt="kangaroo">
+				<h2> The Final Link.</h2>
+			</div>
+			
+		</section>
+
+		<div class="up-button hidden">
+			up
+		</div>
+
+		<div class="down-button">
+			down
+		</div>
+
+		<script
+		  	src="http://code.jquery.com/jquery-3.1.1.min.js"
+		  	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  	crossorigin="anonymous"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.parallax.js"></script>
+		<script src="assets/js/jquery.waypoints.js"></script>
+		<script src="assets/js/jquery.scrollTo.js"></script>
+	</body>
+</html>

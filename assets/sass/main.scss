@@ -1,0 +1,121 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#scene {
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	overflow: hidden;
+
+	.layer {
+		width: 100%;
+		height: 100%;
+		border: 1px solid red;
+
+		.bg-image {
+			position: absolute;
+			width: 110%;
+			height: 110%;
+			transform: translate(-5%, -5%);
+			background-image: url('http://lorempixel.com/output/city-q-c-1000-1000-9.jpg');
+			background-size: cover;
+		}
+
+		&.middle {
+			h1 {
+				font-size: 2rem;
+				color: white;
+				font-weight: 700;
+				text-align: center;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		.fg-panel {
+			position: absolute;
+			width: 120%;
+			height: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+
+.posts {
+	position: relative;
+}
+
+.post-links {
+	width: 100%;
+	height: 200px;
+	background: white;
+
+	&:nth-child(2n + 2) {
+		background: #ccc;
+	}
+
+	img {
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		vertical-align: middle;
+	}
+	h2 {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 5px 20px;
+	}
+}
+
+.fixed-button {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #e21d97;
+	text-align: center;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	padding: 20px 40px;
+
+	&.hidden {
+		display: none;
+	}
+}
+
+.up-button {
+	@extend .fixed-button;
+}
+
+.down-button {
+	@extend .fixed-button;
+}
